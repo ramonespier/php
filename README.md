@@ -39,7 +39,7 @@
 ~~~php
 <?php
 //Recebendo dados do método GET
-echo "Ola, "  . $_GET['nome'] . "!" "Você tem "  . $_GET['idade'] . " anos.";
+echo "Ola, "  . $_GET['nome'] . "! Você tem "  . $_GET['idade'] . " anos.";
 ?>
 ~~~
 
@@ -54,7 +54,7 @@ echo "Ola, "  . $_GET['nome'] . "!" "Você tem "  . $_GET['idade'] . " anos.";
 ~~~php
 <?php
 //Recebendo dados do método POST
-echo "Ola, "  . $_POST['nome'] . "!" "Você tem "  . $_POST['idade'] . " anos.";
+echo "Ola, "  . $_POST['nome'] . "! Você tem "  . $_POST['idade'] . " anos.";
 ?>
 ~~~
 
