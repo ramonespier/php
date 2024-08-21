@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+body {
+    background-color: black;
+    font-family: "DM Sans", sans-serif ;
+}
+
+.titulo, label {
+    color: aliceblue;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.section-form {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 300px;
+    border: 2px solid aliceblue;
+}
+
+.nome-idade {
+    width: 50%;
+    padding: 6px;
+}
+
+.enviar {
+    width: 50%;
+    padding: 6px;
+}
