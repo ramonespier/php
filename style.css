@@ -43,7 +43,7 @@ input{
     height: 300px;
     border: 2px solid aliceblue;
     margin-bottom: 24px;
-    gap: 3px;
+    gap: 8px;
 }
 
 .nome-idade {

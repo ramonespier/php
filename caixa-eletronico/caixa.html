@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa eletrônico</title>
+</head>
+<body>
+    <section class="inputs">
+        <div class="titulo">
+            <h1>Login</h1>
+        </div>
+
+        <form action="processa-caixa.php" method="POST" class="section-form">
+
+            <p>Saldo atual: 500R$</p>
+            <p>Apenas temos notas de 10R$ e 20R$</p>
+
+            <input class="nome-idade" type="number" name="saque" placeholder="Quanto deseja sacar?" min="10" required>
+            <input class="enviar" type="submit" value="Enviar">
+
+        </form>
+    </section>
+</body>
+</html>
