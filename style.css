@@ -93,7 +93,3 @@ input{
     transition: .4s;
 
 }
-
-.home:hover {
-    transform: rotate(1turn);
-}

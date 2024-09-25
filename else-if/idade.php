@@ -31,7 +31,7 @@ if (isset($_POST['idade'])) {
         $html = "Digite um valor válido";
     }
 
-    $html .='<a class="home" href="/aulas-php-1md/php/else-if/idade.php">Voltar</a>';
+    $html .='<a class="home" href="/php/else-if/idade.php">Voltar</a>';
 
 } else {
     $html = 
