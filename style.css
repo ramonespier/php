@@ -3,11 +3,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "DM Sans", sans-serif;
 }
 
 body {
     background-color: black;
-    font-family: "DM Sans", sans-serif ;
     height: 100dvh;
 }
 
@@ -43,15 +43,57 @@ input{
     height: 300px;
     border: 2px solid aliceblue;
     margin-bottom: 24px;
-    gap: 8px;
+    gap: 16px;
 }
 
 .nome-idade {
     width: 50%;
+    height: 25px;
     padding: 6px;
+    font-size: 16px;
 }
 
 .enviar {
     width: 50%;
-    padding: 6px;
+    padding: 8px;
+    background-color: rgb(39, 97, 255);
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.secao-resposta {
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resposta {
+    font-size: 24px;
+    display: flex;
+    color: aliceblue;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+}
+
+.home {
+    background-color: rgb(39, 97, 255);
+    padding: 8px 50px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    font-weight: 400;
+    transition: .4s;
+
+}
+
+.home:hover {
+    transform: rotate(1turn);
 }
