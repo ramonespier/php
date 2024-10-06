@@ -5,7 +5,13 @@ function br() {
 
 // ======================= ARRAYS INDEXADOS E ASSOCIATIVOS =======================================//
 
-$frutas = ["maçã", "banana", "laranja", "melancia", "kiwi"];  // array indexado
+$frutas = ["maçã", "banana", "laranja", "melancia", "kiwi", "maçã"];  // array indexado
+
+$numeros = [
+    "um" => 1,
+    "dois" => 2,
+    "três" => 3
+];
 
 $usuario = [
     "nome" => "João",
@@ -37,6 +43,34 @@ echo in_array("jabuticaba", $frutas), br();  // verifica se um valor existe no a
 echo array_push($frutas, "abacate"), br();  // adiciona um elemento ao final e o retorna do array indexado
 echo array_pop($frutas), br();   // remove o último elemento do array indexado
 echo array_shift($frutas), br();   // remove e retorna o primeiro elemento do array indexado
+
+$chaves = array_keys($frutas);
+$chaves_valor = array_keys($frutas, "maçã");
+$chave_rigorosa = array_keys($numeros, "1", true);
+
+echo "<pre>";
+
+print_r($chaves); // acessando a chave do primeiro elemento do array indexado
+br();
+print_r($chaves_valor); // mostrará apenas as chaves que têm o valor "maçã"
+br();
+print_r($chave_rigorosa); // retorna um array vazio, pois 1 é um int e '1' é um string
+br();
+
+$values = array_values($numeros);
+print_r($values); // o print_r mostrará um novo array contendo apenas os valores do array original, que neste caso seria [1, 2, 3]
+br();
+
+sort($numeros); // a funcao sort() ordena tudo em ordem ascendente
+sort($frutas);
+print_r($numeros) . br();
+print_r($frutas) . br();
+
+rsort($numeros); // ja a funcao rsort(), ordena de forma descendente
+rsort($frutas);
+print_r($numeros) . br();
+print_r($frutas) . br();
+echo "</pre>";
 
 
 // =========================== ARRAYS MULTIDIMENSIONAIS ===================================== //
