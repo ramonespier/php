@@ -7,6 +7,8 @@ function br() {
 
 $frutas = ["maçã", "banana", "laranja", "melancia", "kiwi", "maçã"];  // array indexado
 
+// array associativo
+
 $numeros = [
     "um" => 1,
     "dois" => 2,
@@ -17,7 +19,7 @@ $usuario = [
     "nome" => "João",
     "idade" => 25,
     "email" => "joao@email.com"
-];    // array associativo
+];    
 
 echo $frutas[0], br(); // acessando o primeiro elemento do array indexado
 echo $frutas[2], br();
