@@ -15,6 +15,7 @@ body {
     border: 1px solid;
 }
 
+
 .card {
     display: flex;
     flex-direction: column;
