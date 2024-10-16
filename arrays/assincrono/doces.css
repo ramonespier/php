@@ -1,0 +1,52 @@
+body {
+    margin: 25px;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+}
+
+.flex img {
+    width: 200px;
+    border: 1px solid;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: gold;
+    width: 350px;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 1px 2px 2px 1px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.descricao {
+    background-color: rgb(255, 55, 55);
+    text-align: center;
+    font-weight: 600;
+    color: aliceblue;
+    width: 200px;
+    padding: 8px;
+    border: 1px solid rgb(73, 12, 12);
+}
+
+.preco {
+    background-color: greenyellow;
+    padding: 6px;
+    border : 1px solid;
+
+}
