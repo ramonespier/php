@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -6,6 +7,14 @@ body {
     background-color: rgb(22, 22, 22);
     margin: 0;
     padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(141, 0, 28);
 }
 
 a {
@@ -67,10 +76,33 @@ li {
 
     a{
         color: aliceblue;
-        background-color: rgb(51, 51, 51);
-        padding: 8px;
-        border-radius: 3px
+        font-family: "Mate SC", sans-serif;
+        padding: 9px;
+        border-radius: 2px;
     };
+}
+
+.menu-navegacao a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-navegacao a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: #ffffff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.menu-navegacao a:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 .geral {
@@ -91,4 +123,55 @@ li {
 
 .img-secao img {
     width: 50rem;
+}
+
+
+
+.back-foot {
+    height: 10dvh;
+    background-color: #000;
+    color: aliceblue;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid white;
+}
+ 
+.topicos ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+ 
+.topicos ul li {
+    margin: 0 15px;
+}
+ 
+.topicos ul li a {
+    text-decoration: none;
+    color: #b3b3b3;
+    transition: color 0.3s;
+}
+ 
+.topicos ul li a:hover {
+    color: #ffffff;
+}
+ 
+.social-media {
+    margin: 15px 0;
+}
+ 
+.social-icon {
+    text-decoration: none;
+    color: #b3b3b3;
+    margin: 0 10px;
+}
+ 
+.social-icon:hover {
+    color: #ffffff;
+}
+ 
+.copyright {
+    margin-top: 10px;
+    font-size: 0.9em;
 }
