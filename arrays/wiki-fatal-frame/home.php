@@ -113,12 +113,8 @@
             }
             ?>
         </div>
-        <button class="carrossel-controle volta" onclick="moveSlide(-1)">
-            <img src="./anterior.png" alt="Anterior">
-        </button>
-        <button class="carrossel-controle prox" onclick="moveSlide(1)">
-            <img src="./proximo.png" alt="Próximo">
-        </button>
+        <button class="carrossel-controle volta" onclick="moveSlide(-1)">&laquo;</button>
+        <button class="carrossel-controle prox" onclick="moveSlide(1)">&raquo;</button>
     </div>
 
     <script src="./fatal-script.js"></script>

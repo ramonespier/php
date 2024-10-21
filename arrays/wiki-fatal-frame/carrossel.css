@@ -4,7 +4,7 @@
     margin: auto;
     overflow: hidden;
     border: 2px solid #ddd;
-    border-radius: 10px;
+    border-radius: 6px;
     margin-bottom: 100px;
 }
 
@@ -39,11 +39,15 @@
 
 .carrossel-controle {
     position: absolute;
-    top: 95%;
+    top: 92%;
     transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.747);
+    border: 1px solid aliceblue;
+    border-radius: 6px;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 25px;
+    height: 40dvh;
     cursor: pointer;
     z-index: 1;
     padding: 10px;
@@ -52,11 +56,11 @@
 }
 
 .carrossel-controle.volta {
-    left: 15%;
+    left: 17%;
 }
 
 .carrossel-controle.prox {
-    right: 15%;
+    right: 17%;
 }
 
 .carrossel-controle img {
@@ -64,5 +68,5 @@
 }
 
 .carrossel-controle:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(102, 102, 102);
 }
