@@ -15,16 +15,13 @@ function moveSlide(step) {
     showSlide(iAtual);
 }
 
-document.addEventListener('keydown', function(event) {
-if (event.key === "ArrowRight") {
-    moveSlide(1);
-}
-})
-
-document.addEventListener('keydown', function(event) {
-if (event.key === "ArrowLeft") {
-    moveSlide(-1);
-}
+document.addEventListener('keydown', function (event) {
+    if (event.key === "ArrowRight") {
+        moveSlide(1);
+    };
+    if (event.key === "ArrowLeft") {
+        moveSlide(-1);
+    }
 })
 
 showSlide(iAtual);
