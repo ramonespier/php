@@ -25,6 +25,12 @@ li {
     list-style: none;
 }
 
+.titulos {
+    font-family: "Mate SC", sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+}
+
 .titulo {
     font-family: "Mate SC", sans-serif;
 }
@@ -103,6 +109,10 @@ li {
 .menu-navegacao a:hover::after {
     width: 100%;
     left: 0;
+}
+
+.leia {
+    
 }
 
 .geral {
