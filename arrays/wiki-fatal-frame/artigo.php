@@ -48,35 +48,42 @@ $jogo = $jogos[$index];
     <div class="d-flex justify-content-evenly">
         <div class="cointainer mt-5">
             <div class="card">
-                <img src="" alt="" class="card-img-top">
-                <div class="card-body">
+                <div class="card-body d-flex flex-column align-items-center g-5 ">
                     <?php
                     foreach ($page as $key => $historia) {
                         if ($key == $index) {
                             foreach ($historia as $chave => $lore) {
                                 if (isset($lore['p1'])) {
+                                    echo '<div class="mb-5">';
                                     echo $lore['p1'];
+                                    echo '</div>';
+
                                 }
                                 if (isset($lore['hp1'])) {
+                                    echo '<div>';
                                     echo $lore['hp1'];
+                                    echo '</div>';
                                 }
                             }
                         }
                     }
-
                     ?>
                 </div>
             </div>
         </div>
         <div class="cointainer mt-5">
             <div class="card">
-                <img src="" alt="" class="card-img-top">
-                <div class="card-body">
-                    <?php
+                <div class="card-body d-flex flex-column align-items-center ">
+                <?php
                     foreach ($page as $key => $historia) {
                         if ($key == $index) {
-                            foreach ($historia as $key => $lore) {
-                                echo $lore['p2'];
+                            foreach ($historia as $chave => $lore) {
+                                if (isset($lore['p2'])) {
+                                    echo $lore['p2'];
+                                }
+                                if (isset($lore['hp2'])) {
+                                    echo $lore['hp2'];
+                                }
                             }
                         }
                     }
@@ -86,13 +93,17 @@ $jogo = $jogos[$index];
         </div>
         <div class="cointainer mt-5">
             <div class="card">
-                <img src="" alt="" class="card-img-top">
-                <div class="card-body">
-                    <?php
+                <div class="card-body d-flex flex-column align-items-center h-100">
+                <?php
                     foreach ($page as $key => $historia) {
                         if ($key == $index) {
-                            foreach ($historia as $key => $lore) {
-                                echo $lore['p3'];
+                            foreach ($historia as $chave => $lore) {
+                                if (isset($lore['p3'])) {
+                                    echo $lore['p3'];
+                                }
+                                if (isset($lore['hp3'])) {
+                                    echo $lore['hp3'];
+                                }
                             }
                         }
                     }
