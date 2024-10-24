@@ -46,9 +46,6 @@ require_once 'arrays-fatal.php';
     <div class="carrossel" id="jogos-carrossel">
         <div class="dentro-carrossel">
             <?php
-
-            $count = 0;
-
             foreach ($jogos as $key => $jogo) {
                 echo "<div class='carrossel-item'>";
                 echo $jogo['foto'];
@@ -58,8 +55,6 @@ require_once 'arrays-fatal.php';
                 echo "</a>";
                 echo "<p>{$jogo['descricao']}</p>";
                 echo "</div></div>";
-
-                $count++;
             };
             ?>
         </div>

@@ -64,21 +64,27 @@ $navbar = [
 $page = [
     "Fatal Frame (2001)" => [
         "personagens" => [
-            'mafuyu' => '<img src="./MafuyuHinasaki.webp"></img>',
-            'miku' => '<img src="./Miku_Hinasaki.webp"></img>',
-            'todos' => '<img src="./irmaos-ff1.webp"></img>'
+            'p1' => '<img src="./MafuyuHinasaki.webp"></img>',
+            'p2' => '<img src="./Miku_Hinasaki.webp"></img>',
+            'p3' => '<img src="./irmaos-ff1.webp"></img>'
         ],
 
         'historia' => [
-            'mafuyu' => 'Mafuyu Hinasaki é o filho mais velho de Miyuki e Masato Hinasaki, herdou o sexto sentido da mãe, juntamente com sua irmã. Após seu pai desaparecer de forma misteriosa, sua mãe comete suicídio tempos após o desaparecimento do marido, deixando Mafuyu cuidando de sua irmã Miku Hinasaki. Ao formar-se na faculdade Mafuyu consegue um emprego em uma editora, fica amigo de Yuu Asou e Kei Amakura, juntos eles seguiam pesquisando sobre Junsei Takamine.',
+            'hp1' => 'Mafuyu Hinasaki é o filho mais velho de Miyuki e Masato Hinasaki, herdou o sexto sentido da mãe, juntamente com sua irmã. Após seu pai desaparecer de forma misteriosa, sua mãe comete suicídio tempos após o desaparecimento do marido, deixando Mafuyu cuidando de sua irmã Miku Hinasaki. Ao formar-se na faculdade Mafuyu consegue um emprego em uma editora, fica amigo de Yuu Asou e Kei Amakura, juntos eles seguiam pesquisando sobre Junsei Takamine.',
 
-            'miku' => 'Miku é a filha mais nova de Masato e Miyuki Hinasaki. Ela que herdou o sexto sentido da mãe, sempre foi tímida e muito apegada a seu irmão Mafuyu Hinasaki que possui o mesmo dom. Miku perdeu o pai de forma misteriosa, por volta dos 16 ou 17 anos, Miku encontrou sua mãe enforcada no jardim da casa onde morada. Miyuki cometeu suicídio após a perda do marido, começou a apresentar sinal de loucura principalmente com a câmera obscura, herança de família. Agora orfã Miku tem somente Mafuyu como parente, ela fica mais próxima do irmão e sendo cuidada e acolhida por ele.'
+            'hp2' => 'Miku é a filha mais nova de Masato e Miyuki Hinasaki. Ela que herdou o sexto sentido da mãe, sempre foi tímida e muito apegada a seu irmão Mafuyu Hinasaki que possui o mesmo dom. Miku perdeu o pai de forma misteriosa, por volta dos 16 ou 17 anos, Miku encontrou sua mãe enforcada no jardim da casa onde morada. Miyuki cometeu suicídio após a perda do marido, começou a apresentar sinal de loucura principalmente com a câmera obscura, herança de família. Agora orfã Miku tem somente Mafuyu como parente, ela fica mais próxima do irmão e sendo cuidada e acolhida por ele.',
+
+            'hp3' => 'Fotografia dos irmãos.'
         ],  
 
     ],
     
     "Fatal Frame (2003)" => [
-        "personagens" => "Fatal Frame II: Crimson Butterfly (2003)",
+        "personagens" => [
+            'p2' => '<img src="./MafuyuHinasaki.webp"></img>',
+            'p1' => '<img src="./Miku_Hinasaki.webp"></img>',
+            'p3' => '<img src="./irmaos-ff1.webp"></img>'
+        ],
 
         "local" => "Crimson Butterfly é o segundo título da série Fatal Frame e apresenta uma história independente com poucas relações com o primeiro título. A sequência foi lançada inicialmente para PlayStation 2 em 2003 na América do Norte e Japão e uma recriação desenvolvida para o Wii foi lançada em 2012 no Japão e Europa. A história segue as irmãs gêmeas Mio e Mayu Amakura enquanto exploram uma vila abandonada e experimentam encontros com criaturas paranormais. Suas vidas tornam-se ameaçadas quando os espíritos da aldeia começam a possuir o corpo de Mayu com o objetivo de realizar um sacrifício para um ritual antigo. Os jogadores devem usar uma câmera com poderes de exorcismo para derrotar inimigos e descobrir os segredos da aldeia.",
 

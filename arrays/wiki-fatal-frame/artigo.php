@@ -45,17 +45,62 @@ $jogo = $jogos[$index];
         ?>
     </span>
 
-    <div class="cointainer mt-5">
-        <div class="card">
-            <img src="" alt="" class="card-img-top">
-            <div class="card-body">
-                <?php
-                    
-                ?>
+    <div class="d-flex justify-content-evenly">
+        <div class="cointainer mt-5">
+            <div class="card">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                    <?php
+                    foreach ($page as $key => $historia) {
+                        if ($key == $index) {
+                            foreach ($historia as $chave => $lore) {
+                                if (isset($lore['p1'])) {
+                                    echo $lore['p1'];
+                                }
+                                if (isset($lore['hp1'])) {
+                                    echo $lore['hp1'];
+                                }
+                            }
+                        }
+                    }
+
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="cointainer mt-5">
+            <div class="card">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                    <?php
+                    foreach ($page as $key => $historia) {
+                        if ($key == $index) {
+                            foreach ($historia as $key => $lore) {
+                                echo $lore['p2'];
+                            }
+                        }
+                    }
+                    ?>
+                </div>
+            </div>
+        </div>
+        <div class="cointainer mt-5">
+            <div class="card">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                    <?php
+                    foreach ($page as $key => $historia) {
+                        if ($key == $index) {
+                            foreach ($historia as $key => $lore) {
+                                echo $lore['p3'];
+                            }
+                        }
+                    }
+                    ?>
+                </div>
             </div>
         </div>
     </div>
-
 
 </body>
 
