@@ -44,12 +44,12 @@ $jogos = [
 $navbar = [
     [
         'logo' => '
-        <div>
             <a href="./home.php"
-                <img src="./fatal-logo.jpg" alt="logotipo" class="logo">
+                <div>
+                    <img src="./fatal-logo.jpg" alt="logotipo" class="logo">
+                    <span class="titulo">FATAL FRAME: WIKI</span>
+                </div>
             </a>
-            <span class="titulo">FATAL FRAME: WIKI</span>
-        </div>
 
             '
     ],
@@ -66,9 +66,9 @@ $navbar = [
 $page = [
     "Fatal Frame (2001)" => [
         "personagens" => [
-            'p1' => '<img src="./MafuyuHinasaki.webp" width="250px"></img>',
-            'p2' => '<img src="./Miku_Hinasaki.webp" width="250px"></img>',
-            'p3' => '<img src="./irmaos-ff1.webp" width="250px"></img>'
+            'p1' => '<img src="./MafuyuHinasaki.webp" class="img-fluid" width="250px"></img>',
+            'p2' => '<img src="./Miku_Hinasaki.webp" class="img-fluid" width="250px"></img>',
+            'p3' => '<img src="./irmaos-ff1.webp" class="img-fluid" width="250px"></img>'
         ],
 
         'historia' => [
@@ -83,37 +83,65 @@ $page = [
 
     "Fatal Frame (2003)" => [
         "personagens" => [
-            'p2' => '<img src="./MafuyuHinasaki.webp" width="250px"></img>',
-            'p1' => '<img src="./Miku_Hinasaki.webp" width="250px"></img>',
-            'p3' => '<img src="./irmaos-ff1.webp" width="250px"></img>'
+            'p1' => '<img src="./MioAmakuraPerfil.webp" class="img-fluid" width="250px"></img>',
+            'p2' => '<img src="./MayuAmakuraBio.webp" class="img-fluid" width="250px"></img>',
+            'p3' => '<img src="./Mayubutterfly.webp" class="img-fluid" width="250px"></img>'
         ],
 
-        "local" => "Crimson Butterfly é o segundo título da série Fatal Frame e apresenta uma história independente com poucas relações com o primeiro título. A sequência foi lançada inicialmente para PlayStation 2 em 2003 na América do Norte e Japão e uma recriação desenvolvida para o Wii foi lançada em 2012 no Japão e Europa. A história segue as irmãs gêmeas Mio e Mayu Amakura enquanto exploram uma vila abandonada e experimentam encontros com criaturas paranormais. Suas vidas tornam-se ameaçadas quando os espíritos da aldeia começam a possuir o corpo de Mayu com o objetivo de realizar um sacrifício para um ritual antigo. Os jogadores devem usar uma câmera com poderes de exorcismo para derrotar inimigos e descobrir os segredos da aldeia.",
+        'historia' => [
+            'hp1' => 'Quando Mio era pequena, ela e sua família viviam na área de Minakami, nessa época seu pai Misao Amakura desapareceu misteriosamente. Quando pequena Mio e Mayu brincavam na floresta, subindo a montanha correndo Mayu ficou para trás e caio do morro, quebrando a perna e deixando-a manca para o resto da vida. Após os ocorridos, a mãe de Mio Shizu Amakura mudou-se com as filhas para outra região.',
 
-        "foto" => '<img src="./fatal-dois.webp" width="250px"></img>'
+            'hp2' => 'Mayu Amakamura.',
+
+            'hp3' => ' Quando Mayu e Mio eram pequenas, viviam perto da área de Minakami. Sua mãe advertiu-os de encontro a brincar na floresta, onde seu pai tinha desaparecido quando eram ainda muito novos, mas Mio e Mayu brincavam freqüentemente na floresta em um ponto secreto. Um dia as meninas estavam brincando, correndo ao longo do topo de uma ravina. Mio, que estava um pouco à frente de Mayu, brincou sua irmã dizendo que se Mayu não se apressar, ela iria deixá-la para trás. Lutando para alcançar, Mayu tropeçou e caiu na ravina. Como resultado, sua perna direita foi severamente ferida. Mayu caminha mancando e mantém o joelho enfaixado em todos os momentos.'
+        ]
     ],
 
     "Fatal Frame (2005)" => [
-        "personagens" => "Fatal Frame III: The Tormented (2005)",
+        "personagens" => [
+            'p1' => '<img src="./Rei.webp" class="img-fluid" width="250px"></img>',
+            'p2' => '<img src="./Miku_Hope_Pristess.webp" class="img-fluid" width="250px"></img>',
+            'p3' => '<img src="./KeiAmakura.webp" class="img-fluid" width="250px"></img>'
+        ],
 
-        "local" => "A história segue a fotógrafa Rei Kurosawa que foi encarregada de tirar fotos de uma mansão abandonada. Depois que ela vê uma aparição de seu noivo que ela perdeu recentemente em um acidente de carro, os eventos rapidamente tomam um rumo paranormal que faz a protagonista explorar a mansão em seus sonhos e descobre de sua conexão com aqueles que sofrem de culpa sobrevivente.",
+        'historia' => [
+            'hp1' => 'Rei Kurosawa é uma fotografa freelance e conheceu seu noivo Yuu Asou quando ainda estavam na faculdade, onde estudou antropologia e folclore. Rei morava com Yuu e Miku Hinasaki, a irmã mais nova do amigo de Yuu. Rei e Yuu sofreram um acidente de carro, porém somente Rei saiu viva do acidente, como ela que dirigia sempre culpou-se pela morte de Yuu.',
 
-        "foto" => '<img src="./fatal-tres.webp" width="250px"></img>'
+            'hp2' => 'Após o ocorrido na Mansão Himuro, Miku é acolhida do Yuu Asou, amigo do Mafuyu. Ela passa a viver com ele e a noiva Rei Kurosawa, e passa a trabalhar como assistente de Rei, que é fotografa freelancer. Com a morte de Yuu em um acidente de carro, Miku e Rei caiem na maldição tatuada. Levadas a Mansão do Sonho, Miku revive seus momentos da Mansão Himuro, com a possibilidade de rever seu irmão Mafuyu, Miku vai cada vez mais fundo da mansão, correndo o risco de não poder voltar. Junto com Rei e Kei Amakura, ela ajuda a desvendar e resolver o ocorrido com a Mansão do Sonho, enfrentando a Sacerdotisa Tatuada e novamente a Sacerdotisa da Corda.',
+
+            'hp3' => 'Kei menciona que ele trabalhou com Mafuyu sob Junsei Takamine. Enquanto ele encontra folclore interessante, ele não está muito familiarizado com o campo; é só quando sua sobrinha Mayu desaparece sob circunstâncias peculiares e sua irmã gêmea que Mio começa a sofrer de uma doença estranha, que ele começa a se envolver em pesquisas folclóricas.'
+        ]
     ],
 
     "Fatal Frame (2008)" => [
-        "personagens" => "Fatal Frame: Mask of the Lunar Eclipse (2008)",
+        "personagens" => [
+            'p1' => '<img src="./Ruka_Minazaki.webp" class="img-fluid" width="250px"></img>',
+            'p2' => '<img src="./Misaki_Asou.webp" class="img-fluid" width="250px"></img>',
+            'p3' => '<img src="./Madoka.webp" class="img-fluid" width="250px"></img>'
+        ],
 
-        "local" => "Em 2008, Fatal Frame: Mask of the Lunar Eclipse foi lançado para Wii apenas no Japão. A Tecmo compartilhou o desenvolvimento do título com a Nintendo SPD e a Grasshopper Manufacture. O enredo do jogo se passa na Ilha Rougetsu no qual um incidente provocado por razões desconhecidas afetou um grupo de garotas que foi mantida em cativeiro. Anos após seu resgate, ainda sofrendo de amnésia, uma das garotas chamada Ruka e duas outras sobreviventes retornam à ilha para buscar a verdade. A jogabilidade, assim como nos títulos anteriores, gira em torno da personagem principal explorando ambientes e enfrentando fantasmas hostis usando a Câmera Obscura.[6][7]",
+        'historia' => [
+            'hp1' => 'Quando Ruka tinha 7, ela e suas amigas foram sequestradas e pouco tempo depois encontradas pelo detetive Choushiro Kirishima. Após o ocorrido a mãe de Ruka lhe tirou da Ilha Roguetsu, onde ela nasceu e cresceu, assim como as outras meninas, Ruka e todas as outras meninas perderam qualquer memória do ocorrido antes da mudança.',
 
-        "foto" => '<img src="./fatal-quatro.webp" width="250px"></img>'
+            'hp2' => 'Misaki Asou nasceu e cresceu na Ilha Rogetsu, ela e mais cinco meninas foram sequestradas, quando era pequenas. Após este ocorrido ela e suas amigas foram levadas para fora da ilha. Com o passar do tempo ela e suas amigas já não tiram memórias sobre a vida na Ilha Rogetsu. Duas amigas, Marie e Tomoe morrem de forma misteriosa com as mãos cobrindo o rosto. Com medo de ser a próxima e com desejo de entender o que ocorreu no passado e a relação da ilha com a morte das amigas, ela decide voltar para a ilha',
+
+            'hp3' => 'Madoka Tsukimori nasceu e cresceu na Ilha Rogetsu. Quando pequena teve a Síndrome Getsuyuu, porém de forma branda. Ela ficou no Edifício Rogetsu, onde conheceu suas amigas. Ela era tímida e gostava de desenhar. Ela tinha problemas com Ayako outra paciente do Edifício Rogetsu, Ayako chegou a cortar o pescoço do canário da Madoka. Quando ainda era pequena Madoka questionava-se do porque sua mãe nunca voltou para lhe ver, após ter internado a mesma no Edifício Rogetsu. Madoka convivia mais com a Misaki. Ela assim como as outras quatro meninas, Ruka, Misaki. Marie e Tomoe, foram escolhidas e sequestradas, para fazer um segundo Ritual da Dança Kagura, após serem encontradas pelo Detetive Choushiro Kirishima, ela foi levada para fora da Ilha.'
+        ]
     ],
 
     "Fatal Frame (2015)" => [
-        "personagens" => "Fatal Frame: Maiden of Black Water (2015)",
+        "personagens" => [
+            'p1' => '<img src="./YuuriKozukata.webp" class="img-fluid" width="250px"></img>',
+            'p2' => '<img src="./RenHoujo.webp" class="img-fluid" width="250px"></img>',
+            'p3' => '<img src="./MiuHinasaki.webp" class="img-fluid" width="250px"></img>'
+        ],
 
-        "local" => "O quinto título da franquia foi lançado para o Wii U em 2014 no Japão e em 2015 para os outros territórios. A história, que se passa na fictícia Montanha Hikami, concentra em três protagonistas que são atraídas por eventos sobrenaturais que acontecem na área, incluindo um ritual antigo para selar a Água Negra, uma força malévola que corrompe os espíritos circundantes que está ligado ao destino da donzela do santuário Ose Kurosawa. Em 2021, em comemoração do 20º aniversário da série, a Koei Tecmo lançou uma remasterização do jogo para PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, Nintendo Switch e Microsoft Windows.[8]",
+        'historia' => [
+            'hp1' => 'Yuuri tem o dom do sexto sentido, após um acidente envolvendo toda sua família, ficou órfã e foi acolhida por uma pessoa, mas ela sentia-se perseguida pelos mortos que lhe rondavam e isso acabava lhe isolando do restante das pessoas. Yuuri decidiu que não iria viver com os fantasmas e vozes que lhe rondavam, fugiu da acolhedora e foi ao topo de uma montanha suicidar, porém Hisoka Kurosawa foi chamada para encontrar Yuuri e ela impede que Yuuri cometa suicídio. Yuuri passa a viver com Hisoka e após terminar os estudos começa a trabalhar no antiquário de Hisoka.',
 
-        "foto" => '<img src="./fatal-cinco.jpg"></img>'
+            'hp2' => 'Ren Houjyou é descendente da família Asou, ele passou um tempo na residência da família Asou quando era pequeno. Ren não tinha uma vida boa como autor, então mudou-se para a segunda casa de sua família, que está próxima a Montanha Hikami. Ele conheceu Rui Kagamiya em um escritório de revista, ele levou-a como assistente por ela ser boa em recolher e organizar dados, também por ela fazer a limpeza da casa, por ele não faze-lo. Para fazer um novo livro Ren pediu ao seu amigo Kazuya Sakaki, para ir a Montanha Hikami e encontrar um álbum de fotos dos mortos, mas como seu amigo desapareceu sem encontrar o álbum, Ren pediu a Hisoka Kurosawa para encontrar os dois.',
+
+            'hp3' => 'Filha de Miku Hinasaki, ao completar três anos, Miku lhe deixou. Acolhida por Ayama, que solicitou buscas pela Miku, mas quando Miu cresce pede para pararem as buscas e ela busca por si só. Miu que herdou o sexto sentido da mãe, usa o Kagemi para chegar até ela, vai até a Montanha Hikami e lá é atacada por vários fantasmas de mulheres com os corpos molhados.'
+        ]
     ]
 ];

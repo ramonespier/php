@@ -51,7 +51,7 @@ require_once 'arrays-fatal.php';
                 echo $jogo['foto'];
                 echo "<div class='legenda'>";
                 echo "<a class='titulos' href='./artigo.php?index=" . $key . "'";
-                echo "<h5>{$jogo['nome']}<br><span class='leia'>ler mais...</span></h5>";
+                echo "<h5>{$jogo['nome']}<br><span class='leia'>veja os protagonistas...</span></h5>";
                 echo "</a>";
                 echo "<p>{$jogo['descricao']}</p>";
                 echo "</div></div>";

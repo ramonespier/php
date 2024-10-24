@@ -35,18 +35,21 @@ $jogo = $jogos[$index];
         </nav>
     </header>
 
-    <span class="h3">
-        <?php
-        foreach ($jogos as $key => $jogo) {
-            if ($key == $index) {
-                echo "<li>", $jogo['nome'], "</li>";
+    <div class="d-flex justify-content-center mt-2">
+        <span class="h3">
+            <?php
+            foreach ($jogos as $key => $jogo) {
+                if ($key == $index) {
+                    echo "<li>", $jogo['nome'], "</li>";
+                };
             };
-        };
-        ?>
-    </span>
+            ?>
+        </span>
+    </div>
 
-    <div class="d-flex justify-content-evenly">
-        <div class="cointainer mt-5">
+
+    <div class="d-flex justify-content-between">
+        <div class="container mt-5">
             <div class="card">
                 <div class="card-body d-flex flex-column align-items-center g-5 ">
                     <?php
@@ -57,7 +60,6 @@ $jogo = $jogos[$index];
                                     echo '<div class="mb-5">';
                                     echo $lore['p1'];
                                     echo '</div>';
-
                                 }
                                 if (isset($lore['hp1'])) {
                                     echo '<div>';
@@ -71,18 +73,22 @@ $jogo = $jogos[$index];
                 </div>
             </div>
         </div>
-        <div class="cointainer mt-5">
+        <div class="container mt-5">
             <div class="card">
                 <div class="card-body d-flex flex-column align-items-center ">
-                <?php
+                    <?php
                     foreach ($page as $key => $historia) {
                         if ($key == $index) {
                             foreach ($historia as $chave => $lore) {
                                 if (isset($lore['p2'])) {
+                                    echo '<div class="mb-4">';
                                     echo $lore['p2'];
+                                    echo '</div>';
                                 }
                                 if (isset($lore['hp2'])) {
+                                    echo '<div>';
                                     echo $lore['hp2'];
+                                    echo '</div>';
                                 }
                             }
                         }
@@ -91,18 +97,22 @@ $jogo = $jogos[$index];
                 </div>
             </div>
         </div>
-        <div class="cointainer mt-5">
+        <div class="container mt-5">
             <div class="card">
                 <div class="card-body d-flex flex-column align-items-center h-100">
-                <?php
+                    <?php
                     foreach ($page as $key => $historia) {
                         if ($key == $index) {
                             foreach ($historia as $chave => $lore) {
                                 if (isset($lore['p3'])) {
+                                    echo '<div class="mb-5">';
                                     echo $lore['p3'];
+                                    echo '</div>';
                                 }
                                 if (isset($lore['hp3'])) {
+                                    echo '<div class="mb-5">';
                                     echo $lore['hp3'];
+                                    echo '</div>';
                                 }
                             }
                         }
@@ -112,6 +122,26 @@ $jogo = $jogos[$index];
             </div>
         </div>
     </div>
+
+    <footer>
+        <div class="back-foot">
+            <div class="topicos">
+                <ul>
+                    <li><a href="#">Termos de uso</a></li>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#">Aplicativos</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="#" class="social-icon">Twitter</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Ramon. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 </body>
 
