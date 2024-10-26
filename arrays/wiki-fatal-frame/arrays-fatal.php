@@ -145,3 +145,11 @@ $page = [
         ]
     ]
 ];
+
+$titles = [
+    'Fatal Frame',
+    'Fatal Frame II: Crimson Butterfly',
+    'Fatal Frame III: The Tormented',
+    'Fatal Frame IV',
+    'Fatal Frame: Maiden of Black Water'
+];
