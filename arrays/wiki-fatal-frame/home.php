@@ -9,7 +9,7 @@ require_once 'arrays-fatal.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatal Frame Wiki</title>
-    <link rel="stylesheet" href="../../fatal.css">
+    <link rel="stylesheet" href="./fatal.css">
     <link rel="stylesheet" href="./carrossel.css">
 </head>
 
