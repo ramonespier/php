@@ -1,4 +1,7 @@
 <?php
+
+require_once 'cadastro.php';
+
 $html = "";
 
 if(isset($_POST['usuario'], $_POST['senha'])) {
