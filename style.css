@@ -11,7 +11,7 @@ body {
     height: 100dvh;
 }
 
-.titulo, label {
+.titulo, label, .span {
     color: aliceblue;
 }
 
@@ -54,6 +54,8 @@ input{
 }
 
 .enviar {
+    display: flex;
+    justify-content: center;
     width: 50%;
     padding: 8px;
     background-color: rgb(39, 97, 255);
@@ -61,7 +63,10 @@ input{
     color: aliceblue;
     cursor: pointer;
     font-size: 16px;
+}
 
+.hidden {
+    display: none;
 }
 
 .secao-resposta {
