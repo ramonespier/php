@@ -1,10 +1,24 @@
 <?php
-if (isset($_POST['usuario'], $_POST['senha'], $_POST['confirma'])) {
+require_once 'array-cadastro.php';
 
-    $usuario[$_POST['usuario']];
-    $senha = [$_POST['senha']];
-    $confirma = [$_POST['confirma']];
-};
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    $novoCadastro = [
+        'nome' => $nome,
+        'email' => $email,
+        'email' => $email,
+    ];
+
+    $cadastro[] = $novoCadastro;
+    $_SESSION['cadastro'] = $cadastro;
+}
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -25,9 +39,16 @@ if (isset($_POST['usuario'], $_POST['senha'], $_POST['confirma'])) {
 
         <form action="cadastro.php" method="POST" class="section-form">
 
-            <input class="nome-idade" type="text" name="usuario" placeholder="Insira o seu nome de usuário" required>
+            <input class="nome-idade" type="text" name="nome" placeholder="Insira o seu nome de usuário" required>
+            <input class="nome-idade" type="text" name="email" placeholder="Insira o seu email" required>
             <input class="nome-idade" id="senha" type="text" name="senha" placeholder="Insira sua senha" required>
             <input class="nome-idade" id="confirma" type="text" name="confirma" placeholder="Confirme sua senha" required>
+            <input type="submit" href="./processa-login.php" value="Enviar" class="enviar">
+            <hr style="width: 100%;">
+
+            <div class="redirect">
+                <p>Ja tem conta? <a href="./processa-login.php">Faça login</a></p>
+            </div>
 
 
         </form>

@@ -1,22 +1,23 @@
 <?php
 
-require_once 'cadastro.php';
+require_once 'array-cadastro.php';
 
 $html = "";
 
-if(isset($_POST['usuario'], $_POST['senha'])) {
+if(isset($_POST['nome'], $_POST['senha'], $_POST['email'])) {
 
-    $usuario = $_POST['usuario'];
+    $nome = $_POST['nome'];
     $senha = $_POST['senha'];
+    $email = $_POST['email'];
     
-    if ($usuario === 'admin' && $senha === '123@321') {
-        $html = 'Bem vindo, administrador';
+    if ($nome === $cadastro['nome'] && $senha === $cadastro['senha'] && $email === $cadastro['email']) {
+        $html = 'Login bem-sucedido';
     
     } else {
-        $html = 'Acesso negado.';
+        $html = 'Verifique se o email ou a senha estão corretos.';
     }
 
-    $html .='<a class="home" href="/php/login/processa-login.php">Voltar</a>';
+    $html .='<a class="home" href="/php/login/processa-login.php">Voltar</a>'; 
 
 } else {
     $html = '<section class="inputs">
@@ -26,8 +27,9 @@ if(isset($_POST['usuario'], $_POST['senha'])) {
 
         <form action="processa-login.php" method="POST" class="section-form">
 
-            <input class="nome-idade" type="text" name="usuario" placeholder="Insira o seu nome de usuário" required>
-            <input class="nome-idade" type="password" name="senha" placeholder="Insira sua senha" required>
+            <input class="nome-idade" type="text" name="nome" placeholder="Insira o seu nome de usuário" required>
+            <input class="nome-idade" type="text" name="email" placeholder="Insira o seu email" required>
+            <input class="nome-idade" type="text" name="senha" placeholder="Insira sua senha" required>
             <input class="enviar" type="submit" value="Enviar">
 
         </form>
