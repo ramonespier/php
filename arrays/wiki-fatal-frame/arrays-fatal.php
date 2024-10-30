@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 $jogos = [
     "Fatal Frame (2001)" => [
         "nome" => "Fatal Frame",
@@ -145,6 +147,13 @@ $page = [
         ]
     ]
 ];
+
+if (!isset($_SESSION['jogos'])) {
+    $_SESSION['jogos'] = $jogos;
+
+} else {
+    $jogos = $_SESSION['jogos'];
+}
 
 // $titles = [
 //     'Fatal Frame',

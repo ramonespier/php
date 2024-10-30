@@ -16,7 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ];
 
     $jogos['titulo'] = $novoJogo;
+
+    $_SESSION['jogos'] = $jogos;
 }
+
 
 // print_r($jogos);
 ?>
