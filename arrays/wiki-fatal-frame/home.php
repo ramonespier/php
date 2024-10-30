@@ -1,5 +1,21 @@
 <?php
 require_once 'arrays-fatal.php';
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $titulo = $_POST['titulo'];
+    $descricao = $_POST['descricao'];
+    $foto = $_POST['foto'];
+    $nome = $_POST['nome'];
+
+    $jogos = [
+        'titulo' => $titulo,
+        'nome' => $nome,
+        'descricao' => $descricao,
+        'foto' => $foto,
+    ];
+
+    $artigos['titulo'] = $jogos;
+}
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +54,7 @@ require_once 'arrays-fatal.php';
         </div>
 
         <div class="img-secao">
-            <img src="./secao-fatal.jpg" alt="imagem do jogo">
+            <img src="./secao-fatal.jpg" alt="foto do jogo">
         </div>
 
     </section>
@@ -61,6 +77,19 @@ require_once 'arrays-fatal.php';
         <button class="carrossel-controle volta" onclick="moveSlide(-1)">&laquo;</button>
         <button class="carrossel-controle prox" onclick="moveSlide(1)">&raquo;</button>
     </div>
+
+    <section class="addItem">
+
+        <span>Adicione mais um artigo neste carrossel</span>
+        <form action="home.php" method="POST">
+            <input type="text" name="titulo" placeholder="Título">
+            <input type="text" name="nome" placeholder="Nome">
+            <input type="text" name="descricao" placeholder="Descrição">
+            <input type="text" name="foto" placeholder="Foto">
+            <input type="submit" value="Enviar">
+    </section>
+
+    </form>
 
     <footer>
         <div class="back-foot">

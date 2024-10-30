@@ -221,3 +221,24 @@ li {
     color: aliceblue;
     text-align: justify;
 }
+
+.addItem {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.addItem form{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    gap: 10px;
+}
+
+.addItem form>input {
+    padding: 10px;
+    background-color: #00000000;
+    color: aliceblue;
+    border: solid 1px aliceblue;
+    margin: 5px;
+}
