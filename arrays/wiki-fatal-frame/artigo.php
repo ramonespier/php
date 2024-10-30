@@ -58,7 +58,7 @@ $jogo = $jogos[$index];
                             foreach ($historia as $chave => $lore) {
                                 if (isset($lore['p1'])) {
                                     echo '<div class="mb-5">';
-                                    echo $lore['p1'];
+                                    echo "<img src='./img/" . $lore['p1'] . "'class='img-fluid' width='250px'></img>";
                                     echo '</div>';
                                 }
                                 if (isset($lore['hp1'])) {
@@ -82,7 +82,7 @@ $jogo = $jogos[$index];
                             foreach ($historia as $chave => $lore) {
                                 if (isset($lore['p2'])) {
                                     echo '<div class="mb-4">';
-                                    echo $lore['p2'];
+                                    echo "<img src='./img/" . $lore['p2'] . "'class='img-fluid' width='250px'></img>";
                                     echo '</div>';
                                 }
                                 if (isset($lore['hp2'])) {
@@ -106,7 +106,7 @@ $jogo = $jogos[$index];
                             foreach ($historia as $chave => $lore) {
                                 if (isset($lore['p3'])) {
                                     echo '<div class="mb-5">';
-                                    echo $lore['p3'];
+                                    echo "<img src='./img/" . $lore['p3'] . "'class='img-fluid' width='250px'></img>";
                                     echo '</div>';
                                 }
                                 if (isset($lore['hp3'])) {

@@ -2,20 +2,23 @@
 require_once 'arrays-fatal.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $titulo = $_POST['titulo'];
     $descricao = $_POST['descricao'];
     $foto = $_POST['foto'];
     $nome = $_POST['nome'];
 
-    $jogos = [
-        'titulo' => $titulo,
+    $novoJogo = [
+
         'nome' => $nome,
         'descricao' => $descricao,
         'foto' => $foto,
+
+
     ];
 
-    $artigos['titulo'] = $jogos;
+    $jogos['titulo'] = $novoJogo;
 }
+
+// print_r($jogos);
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <header>
         <nav class="menu-navegacao">
             <div>
-                <img src="./fatal-logo.jpg" alt="logotipo" class="logo">
+                <img src="./img/fatal-logo.jpg" alt="logotipo" class="logo">
                 <span class="titulo">FATAL FRAME: WIKI</span>
             </div>
 
@@ -54,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
 
         <div class="img-secao">
-            <img src="./secao-fatal.jpg" alt="foto do jogo">
+            <img src="./img/secao-fatal.jpg" alt="foto do jogo">
         </div>
 
     </section>
@@ -64,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <?php
             foreach ($jogos as $key => $jogo) {
                 echo "<div class='carrossel-item'>";
-                echo $jogo['foto'];
+                echo "<img width='250px' src='./img/" . $jogo['foto'] . "'></img>";
                 echo "<div class='legenda'>";
                 echo "<a class='titulos' href='./artigo.php?index=" . $key . "'";
                 echo "<h5>{$jogo['nome']}<br><span class='leia'>veja os protagonistas...</span></h5>";
@@ -81,8 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <section class="addItem">
 
         <span>Adicione mais um artigo neste carrossel</span>
-        <form action="home.php" method="POST">
-            <input type="text" name="titulo" placeholder="Título">
+        <form action="./home.php" method="POST">
             <input type="text" name="nome" placeholder="Nome">
             <input type="text" name="descricao" placeholder="Descrição">
             <input type="text" name="foto" placeholder="Foto">
