@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     height: 100dvh;
 }
 
@@ -28,6 +28,23 @@ body {
     align-items: center;
 }
 
+.redirect {
+    color: aliceblue;
+}
+
+.redirect a {
+    padding: 6px;
+    text-decoration: none;
+    background-color: rgb(39, 97, 255);
+    border: 1px solid aliceblue;
+    color: aliceblue;
+    transition: .4s;
+}
+
+.redirect a:hover {
+    color: rgb(193, 204, 204);
+}
+
 input{
     border-radius: 6px;
     border: none;
@@ -40,7 +57,7 @@ input{
     align-items: center;
     justify-content: center;
     width: 450px;
-    height: 300px;
+    height: 350px;
     border: 2px solid aliceblue;
     margin-bottom: 24px;
     gap: 16px;
@@ -63,6 +80,11 @@ input{
     color: aliceblue;
     cursor: pointer;
     font-size: 16px;
+    transition: .4s;
+}
+
+.enviar:hover {
+    color: rgb(193, 204, 204);
 }
 
 .hidden {
